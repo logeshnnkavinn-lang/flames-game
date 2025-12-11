@@ -4,7 +4,7 @@ document.getElementById("flamesForm").addEventListener("submit", async (e) => {
   const name1 = document.getElementById("name1").value;
   const name2 = document.getElementById("name2").value;
 
-  const res = await fetch("/calculate", {
+  const res = await fetch("https://flames-game-8xa0.onrender.com/calculate", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ name1, name2 })
